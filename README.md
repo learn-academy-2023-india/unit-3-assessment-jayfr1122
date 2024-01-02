@@ -38,20 +38,59 @@ PRs should be posted _before_ class begins on Tuesday, January 2, 2024.
 ### Interview Practice Questions
 
 1. What are three (3) syntax difference between HTML and JSX?
+<!-- 
+HTML use class while JSX uses className.
+HTML uses style as an attribute as a string or list of CSS styles while JSX uses style attribute with an object where property names are written camelCase.
+HTML allows attribute values to be specified with quotes while JSX has attribute values in curly brackets when they are dynamic.
+ -->
 
-2. What is yarn? What file(s) are modified when you run the command yarn in your terminal?
+2. What is yarn? What file(s) are modified when you run the command yarn in your terminal? 
+<!-- 
+yarn is an alternative to npm that manages project dependencies, versions, and helps with installing packages.
+yarn.lock , package.json, and node_modules are created/modified.
+ -->
 
 3. What is the difference between state values and props in React?
+<!-- Both are used to manage and use data in React.
+State: 
+- is updated using setState
+- used for dynamic data
+- is mutable
+- in React components can re render as state changes
+- state acts as source of truth for a component. Changes cause a rerender of the component
+- manages internal component state, user interactions, storing dynamic data that changes over time
+Props: 
+- unidirectional from parent to child component
+- values passed to child are read only and can not be changed
+- parent values must change in order for child values to change
+- source of truth for the parent component. Changes to parent cause changes to the child component
+- passes data from parent to child components and help make components reusable and configurable
+-->
+
 
 4. STRETCH (optional): What is the difference between a div tag and a span tag?
+<!-- 
+- div stands for division, marks a block of code that can take in multiple lines of code as a block 
+- div utilized mainly for stucturing and layout purposes
+- span is utilized in-line andly takes in a line at a time
+- span is utilized mainly for styling purposes
+ -->
 
 ### Looking Ahead: Terms for Next Unit
 
-1. Object-oriented programming:
+1. Object-oriented programming: Organizes code into objects as classes a sa way of modeling code as real world entities.
+- class = a blueprint for creating objects. Defines a set of attributes/properties and methods/functions that the objects created from the classes will have.
+- object = an instance of a class. self contained unit that combines data/attributes and behavior/methods. represent real world entities.
+- encapsulation = bundling of data/attributes and methods that operate on data into a single unit/class. only shows pertinent information not how the objects itself works.
+- inheritance = allows a class to inherit the properties and methods of anothe class. reuses code and establishes a relationship betwen classes.
+- polymorphism = allows objects of different classes to be treated as objects of a common base class.
+- abstraction = simplifies complex systems bymodeling classes based on essential properties and behaviors. creating an abstract class that defines a common baseline without providing how it is implemented.
 
-2. Ruby:
+2. Ruby: a dynamic reflective object oriented programming language designs by "Matz"
+Ruby is known to for these characterizations:
+-object oriented -dynamic typing -interpreted language -garbage collection -expressive syntax -metaprogramming -ecosystem -cross platform
 
-3. Ruby Hashes:
+3. Ruby Hashes: data structures that allow you to organize and retrieve data using key value pairs. ie : associative array, dictionary, map
 
 ---
 
